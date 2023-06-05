@@ -11,11 +11,11 @@ export default class PVE extends Battle {
     this._monsters = monsters;
   }
 
-  public get player01(): Fighter {
+  get player01(): Fighter {
     return this._player01;
   }
 
-  public get monsters(): SimpleFighter[] {
+  get monsters(): SimpleFighter[] {
     return this._monsters;
   }
 
@@ -34,7 +34,7 @@ export default class PVE extends Battle {
     });
   }
 
-  public fight(): number {
+  fight(): number {
     const { player01, monsters } = this;
     while (
       player01.lifePoints > 0
